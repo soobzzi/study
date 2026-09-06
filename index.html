@@ -527,6 +527,7 @@ function runTerm(raw){
      ios.mode='global';
    }
    else if(isOneOf(c,['copy running-config startup-config','copy run start','copy r s','copy ru st','wr','write memory','write mem'])){
+     ios.mode='privileged';
      ios.saved=true; ios.runningDirty=false;
      appendTerm('Building configuration...');
      appendTerm('[OK]');
@@ -640,7 +641,7 @@ function runTerm(raw){
    else iosError('Invalid input detected at DHCP pool configuration mode.');
  }
 
- prompt.textContent=iosPrompt();
+ document.getElementById('prompt').textContent=iosPrompt();
  terminal.scrollTop=terminal.scrollHeight;
 }
 
