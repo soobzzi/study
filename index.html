@@ -345,7 +345,7 @@ select,button,input{font:inherit}select,button{background:#fff;border:1px solid 
 
 <script>
 const QUESTIONS=[{"cat": "실기단답", "q": "IPv4와 IPv6를 동시에 사용하여 두 프로토콜을 모두 지원하는 방식을 무엇이라 하는가?", "a": ["듀얼스택", "dual stack", "dualstack"], "e": "IPv4와 IPv6를 한 장비/호스트에서 함께 운용하는 방식은 Dual Stack이다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "거리 벡터 방식을 사용하며 최대 홉 수가 15인 라우팅 프로토콜은?", "a": ["rip"], "e": "RIP는 Distance Vector 방식이며 15홉까지 도달 가능, 16홉은 도달 불가로 본다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "링크 상태 방식이며 Dijkstra(SPF) 알고리즘을 사용하는 라우팅 프로토콜은?", "a": ["ospf"], "e": "OSPF는 Link State 라우팅 프로토콜이고 SPF(Dijkstra) 알고리즘을 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "자율 시스템(AS) 간 경로 정보를 교환하는 대표 라우팅 프로토콜은?", "a": ["bgp"], "e": "BGP는 인터넷에서 AS 간 라우팅에 사용하는 대표 프로토콜이다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "IPv4 주소를 MAC 주소로 변환하는 프로토콜은?", "a": ["arp"], "e": "ARP는 같은 LAN에서 IPv4 주소에 대응하는 MAC 주소를 알아낼 때 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "IP 통신의 오류 보고와 진단에 사용되며 ping과 관련 있는 프로토콜은?", "a": ["icmp"], "e": "ICMP는 네트워크 계층의 제어/오류 보고 프로토콜이고 ping이 Echo 메시지를 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "멀티캐스트 그룹의 가입 및 탈퇴 정보를 관리하는 IPv4 프로토콜은?", "a": ["igmp"], "e": "IGMP는 IPv4 멀티캐스트 그룹 관리에 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "서로 다른 종류의 네트워크를 연결하고 프로토콜 변환까지 수행할 수 있는 장비는?", "a": ["게이트웨이", "gateway"], "e": "Gateway는 이기종 네트워크 또는 서로 다른 프로토콜 간 연결/변환에 사용된다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "IP 주소를 보고 목적지까지의 최적 경로를 선택하는 장비는?", "a": ["라우터", "router"], "e": "Router는 네트워크 계층에서 IP를 기준으로 경로를 선택한다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "MAC 주소를 기반으로 프레임을 전달하는 대표 장비는?", "a": ["스위치", "switch"], "e": "Switch는 데이터 링크 계층에서 MAC Address Table을 이용한다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "네트워크 장비의 트래픽이나 상태 정보를 그래프로 모니터링할 때 사용되는 대표 도구는?", "a": ["mrtg"], "e": "MRTG(Multi Router Traffic Grapher)는 SNMP 등으로 수집한 트래픽 값을 그래프로 표현하는 도구다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "송신자의 IP 주소를 다른 주소처럼 위조하는 공격을 무엇이라 하는가?", "a": ["ip spoofing", "ip 스푸핑", "스푸핑"], "e": "IP Spoofing은 출발지 IP 주소를 위조하는 공격 기법이다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "암호화된 원격 터미널 접속에 사용하는 프로토콜은?", "a": ["ssh"], "e": "SSH는 암호화된 원격 CLI 접속을 제공한다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "한 드라이브가 고장 나도 다른 드라이브의 동일 데이터를 사용할 수 있도록 미러링하는 RAID는?", "a": ["raid 1", "raid1"], "e": "RAID 1은 Mirroring 방식으로 같은 데이터를 복제해 저장한다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "Cisco 스위치에서 VLAN 정보를 다른 스위치에 전파·관리하는 Cisco 프로토콜은?", "a": ["vtp"], "e": "VTP(VLAN Trunking Protocol)는 Cisco 환경에서 VLAN 정보를 전파하는 데 사용된다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "IPv4의 주소 길이는 몇 비트인가?", "a": ["32", "32비트"], "e": "IPv4는 32비트 주소 체계다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "IPv6의 주소 길이는 몇 비트인가?", "a": ["128", "128비트"], "e": "IPv6는 128비트 주소 체계다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "IPv6에는 IPv4의 브로드캐스트 대신 어떤 전송 형태가 추가되어 있는가? 유니캐스트·멀티캐스트 외 하나를 쓰시오.", "a": ["애니캐스트", "anycast"], "e": "IPv6는 Unicast, Multicast, Anycast를 사용하며 Broadcast는 사용하지 않는다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "사설 IPv4 주소 대역 10.0.0.0부터 시작하는 범위의 CIDR 표기는?", "a": ["10.0.0.0/8", "10/8"], "e": "사설 A 대역은 10.0.0.0/8이다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "사설 IPv4 주소 172.16.0.0부터 172.31.255.255까지의 CIDR 표기는?", "a": ["172.16.0.0/12"], "e": "172.16.0.0/12가 RFC1918 사설 주소 대역이다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "사설 IPv4 주소 192.168.x.x 대역의 CIDR 표기는?", "a": ["192.168.0.0/16"], "e": "192.168.0.0/16이 사설 주소 대역이다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "다음 프로토콜들이 속하는 계층을 쓰시오: TCP, UDP", "a": ["전송계층", "전송 계층", "transport", "4계층"], "e": "TCP/UDP는 전송 계층 프로토콜이다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "다음 프로토콜들이 속하는 계층을 쓰시오: HTTP, FTP, SMTP, DNS", "a": ["응용계층", "응용 계층", "application"], "e": "HTTP/FTP/SMTP/DNS는 TCP/IP 응용 계층 프로토콜이다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "다음 프로토콜들이 속하는 계층을 쓰시오: IP, ICMP, IGMP, ARP, RIP", "a": ["인터넷계층", "인터넷 계층", "네트워크계층", "네트워크 계층"], "e": "실기 단답에서는 IP·ICMP·IGMP·ARP·RIP 등을 네트워크/인터넷 계층 묶음으로 자주 구분한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 파일 또는 디렉터리를 삭제하는 명령어는?", "a": ["rm"], "e": "rm은 파일/디렉터리 삭제에 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 파일을 이동하거나 이름을 변경하는 명령어는?", "a": ["mv"], "e": "mv는 move의 약자로 이동/이름변경에 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 파일이나 디렉터리를 검색하는 명령어는?", "a": ["find"], "e": "find는 경로 아래에서 파일/디렉터리를 검색한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 파일 형식을 확인하는 명령어는?", "a": ["file"], "e": "file은 파일 내용을 검사해 타입을 판별한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 파일시스템의 디스크 사용량과 남은 용량을 확인하는 명령어는?", "a": ["df"], "e": "df는 파일시스템별 디스크 사용량을 확인한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 CPU와 메모리 사용량을 실시간으로 확인하는 명령어는?", "a": ["top"], "e": "top은 CPU/메모리와 프로세스 상태를 실시간 표시한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 네트워크 인터페이스의 IP 정보를 확인하는 전통적인 명령어는?", "a": ["ifconfig"], "e": "ifconfig는 인터페이스 설정/조회에 사용되는 전통 명령어다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 네트워크 연결 상태와 라우팅 테이블 등을 확인하는 대표 명령어는?", "a": ["netstat"], "e": "netstat는 네트워크 연결, 라우팅 테이블, 인터페이스 통계 등을 확인한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 물리 장치를 파일시스템의 특정 디렉터리에 연결하는 명령어는?", "a": ["mount"], "e": "mount는 장치/파일시스템을 디렉터리에 마운트한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 마운트를 해제하는 명령어는?", "a": ["umount"], "e": "umount는 마운트된 파일시스템을 해제한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스의 서비스별 포트 번호가 정리된 대표 파일 경로는?", "a": ["/etc/services", "etc/services"], "e": "/etc/services 파일에는 잘 알려진 서비스명과 포트/프로토콜 정보가 기록돼 있다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 사용자 비밀번호를 설정하거나 변경하는 명령어는?", "a": ["passwd"], "e": "passwd는 사용자 비밀번호를 설정·변경한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 현재 작업 디렉터리의 절대 경로를 확인하는 명령어는?", "a": ["pwd"], "e": "pwd는 현재 작업 디렉터리를 출력한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 파일의 마지막 부분을 확인하는 명령어는?", "a": ["tail"], "e": "tail은 파일의 마지막 부분을 출력한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스에서 특정 문자열을 검색하는 명령어는?", "a": ["grep"], "e": "grep은 입력/파일에서 패턴을 검색한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "리눅스 명령어 사용 기록을 모두 삭제하는 명령어는?", "a": ["history -c"], "e": "history -c는 현재 셸의 명령 기록을 지운다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "파일 권한을 rwxr-xr-x로 설정하려 한다. (A) (B) 파일명 형식에서 A와 B를 순서대로 쓰시오.", "a": ["chmod 755", "chmod, 755", "chmod 755"], "e": "r=4, w=2, x=1이다. rwxr-xr-x를 소유자/그룹/기타로 나누어 더하면 755이므로 chmod 755 파일명 형태로 설정한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "파일 권한을 rw-r--r--로 설정하려 한다. (A) (B) 파일명 형식에서 A와 B를 순서대로 쓰시오.", "a": ["chmod 644", "chmod, 644", "chmod 644"], "e": "r=4, w=2, x=1이다. rw-r--r--를 소유자/그룹/기타로 나누어 더하면 644이므로 chmod 644 파일명 형태로 설정한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "파일 권한을 rwx------로 설정하려 한다. (A) (B) 파일명 형식에서 A와 B를 순서대로 쓰시오.", "a": ["chmod 700", "chmod, 700", "chmod 700"], "e": "r=4, w=2, x=1이다. rwx------를 소유자/그룹/기타로 나누어 더하면 700이므로 chmod 700 파일명 형태로 설정한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "파일 권한을 rwxrwxr-x로 설정하려 한다. (A) (B) 파일명 형식에서 A와 B를 순서대로 쓰시오.", "a": ["chmod 775", "chmod, 775", "chmod 775"], "e": "r=4, w=2, x=1이다. rwxrwxr-x를 소유자/그룹/기타로 나누어 더하면 775이므로 chmod 775 파일명 형태로 설정한다.", "tip": "", "level": "실기복원형"}, {"cat": "Linux실기", "q": "파일 권한을 rw-rw-r--로 설정하려 한다. (A) (B) 파일명 형식에서 A와 B를 순서대로 쓰시오.", "a": ["chmod 664", "chmod, 664", "chmod 664"], "e": "r=4, w=2, x=1이다. rw-rw-r--를 소유자/그룹/기타로 나누어 더하면 664이므로 chmod 664 파일명 형태로 설정한다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.10.34/27의 네트워크 ID를 구하시오.", "a": ["192.168.10.32"], "e": "/27 → 서브넷 마스크 255.255.255.224 → 블록 크기 32. 마지막 옥텟은 32단위로 끊기므로 34가 포함되는 구간은 32~63. 첫 주소인 192.168.10.32이 네트워크 ID다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.10.34/27의 브로드캐스트 주소를 구하시오.", "a": ["192.168.10.63"], "e": "/27 → 서브넷 마스크 255.255.255.224 → 블록 크기 32. 34가 포함되는 구간은 32~63. 마지막 주소인 192.168.10.63가 브로드캐스트 주소다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.1.130/26의 네트워크 ID를 구하시오.", "a": ["192.168.1.128"], "e": "/26 → 서브넷 마스크 255.255.255.192 → 블록 크기 64. 마지막 옥텟은 64단위로 끊기므로 130가 포함되는 구간은 128~191. 첫 주소인 192.168.1.128이 네트워크 ID다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.1.130/26의 브로드캐스트 주소를 구하시오.", "a": ["192.168.1.191"], "e": "/26 → 서브넷 마스크 255.255.255.192 → 블록 크기 64. 130가 포함되는 구간은 128~191. 마지막 주소인 192.168.1.191가 브로드캐스트 주소다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.0.70/28의 네트워크 ID를 구하시오.", "a": ["192.168.0.64"], "e": "/28 → 서브넷 마스크 255.255.255.240 → 블록 크기 16. 마지막 옥텟은 16단위로 끊기므로 70가 포함되는 구간은 64~79. 첫 주소인 192.168.0.64이 네트워크 ID다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.0.70/28의 브로드캐스트 주소를 구하시오.", "a": ["192.168.0.79"], "e": "/28 → 서브넷 마스크 255.255.255.240 → 블록 크기 16. 70가 포함되는 구간은 64~79. 마지막 주소인 192.168.0.79가 브로드캐스트 주소다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 10.0.0.14/29의 네트워크 ID를 구하시오.", "a": ["10.0.0.8"], "e": "/29 → 서브넷 마스크 255.255.255.248 → 블록 크기 8. 마지막 옥텟은 8단위로 끊기므로 14가 포함되는 구간은 8~15. 첫 주소인 10.0.0.8이 네트워크 ID다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 10.0.0.14/29의 브로드캐스트 주소를 구하시오.", "a": ["10.0.0.15"], "e": "/29 → 서브넷 마스크 255.255.255.248 → 블록 크기 8. 14가 포함되는 구간은 8~15. 마지막 주소인 10.0.0.15가 브로드캐스트 주소다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 172.16.20.201/27의 네트워크 ID를 구하시오.", "a": ["172.16.20.192"], "e": "/27 → 서브넷 마스크 255.255.255.224 → 블록 크기 32. 마지막 옥텟은 32단위로 끊기므로 201가 포함되는 구간은 192~223. 첫 주소인 172.16.20.192이 네트워크 ID다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 172.16.20.201/27의 브로드캐스트 주소를 구하시오.", "a": ["172.16.20.223"], "e": "/27 → 서브넷 마스크 255.255.255.224 → 블록 크기 32. 201가 포함되는 구간은 192~223. 마지막 주소인 172.16.20.223가 브로드캐스트 주소다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.100.62/30의 네트워크 ID를 구하시오.", "a": ["192.168.100.60"], "e": "/30 → 서브넷 마스크 255.255.255.252 → 블록 크기 4. 마지막 옥텟은 4단위로 끊기므로 62가 포함되는 구간은 60~63. 첫 주소인 192.168.100.60이 네트워크 ID다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.100.62/30의 브로드캐스트 주소를 구하시오.", "a": ["192.168.100.63"], "e": "/30 → 서브넷 마스크 255.255.255.252 → 블록 크기 4. 62가 포함되는 구간은 60~63. 마지막 주소인 192.168.100.63가 브로드캐스트 주소다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 172.20.1.200/25의 네트워크 ID를 구하시오.", "a": ["172.20.1.128"], "e": "/25 → 서브넷 마스크 255.255.255.128 → 블록 크기 128. 마지막 옥텟은 128단위로 끊기므로 200가 포함되는 구간은 128~255. 첫 주소인 172.20.1.128이 네트워크 ID다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 172.20.1.200/25의 브로드캐스트 주소를 구하시오.", "a": ["172.20.1.255"], "e": "/25 → 서브넷 마스크 255.255.255.128 → 블록 크기 128. 200가 포함되는 구간은 128~255. 마지막 주소인 172.20.1.255가 브로드캐스트 주소다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.5.250/29의 네트워크 ID를 구하시오.", "a": ["192.168.5.248"], "e": "/29 → 서브넷 마스크 255.255.255.248 → 블록 크기 8. 마지막 옥텟은 8단위로 끊기므로 250가 포함되는 구간은 248~255. 첫 주소인 192.168.5.248이 네트워크 ID다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.5.250/29의 브로드캐스트 주소를 구하시오.", "a": ["192.168.5.255"], "e": "/29 → 서브넷 마스크 255.255.255.248 → 블록 크기 8. 250가 포함되는 구간은 248~255. 마지막 주소인 192.168.5.255가 브로드캐스트 주소다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 10.10.10.33/28의 네트워크 ID를 구하시오.", "a": ["10.10.10.32"], "e": "/28 → 서브넷 마스크 255.255.255.240 → 블록 크기 16. 마지막 옥텟은 16단위로 끊기므로 33가 포함되는 구간은 32~47. 첫 주소인 10.10.10.32이 네트워크 ID다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 10.10.10.33/28의 브로드캐스트 주소를 구하시오.", "a": ["10.10.10.47"], "e": "/28 → 서브넷 마스크 255.255.255.240 → 블록 크기 16. 33가 포함되는 구간은 32~47. 마지막 주소인 10.10.10.47가 브로드캐스트 주소다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.77.100/26의 네트워크 ID를 구하시오.", "a": ["192.168.77.64"], "e": "/26 → 서브넷 마스크 255.255.255.192 → 블록 크기 64. 마지막 옥텟은 64단위로 끊기므로 100가 포함되는 구간은 64~127. 첫 주소인 192.168.77.64이 네트워크 ID다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "IP 주소 192.168.77.100/26의 브로드캐스트 주소를 구하시오.", "a": ["192.168.77.127"], "e": "/26 → 서브넷 마스크 255.255.255.192 → 블록 크기 64. 100가 포함되는 구간은 64~127. 마지막 주소인 192.168.77.127가 브로드캐스트 주소다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "네트워크가 192.168.1.0/24일 때 사용 가능한 마지막 호스트 IP를 구하시오.", "a": ["192.168.1.254"], "e": "사용 가능한 마지막 IP는 브로드캐스트 주소 바로 전 주소다. 따라서 192.168.1.254이다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "네트워크가 192.168.10.0/25일 때 사용 가능한 마지막 호스트 IP를 구하시오.", "a": ["192.168.10.126"], "e": "사용 가능한 마지막 IP는 브로드캐스트 주소 바로 전 주소다. 따라서 192.168.10.126이다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "네트워크가 192.168.20.128/26일 때 사용 가능한 마지막 호스트 IP를 구하시오.", "a": ["192.168.20.190"], "e": "사용 가능한 마지막 IP는 브로드캐스트 주소 바로 전 주소다. 따라서 192.168.20.190이다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "네트워크가 10.0.0.32/27일 때 사용 가능한 마지막 호스트 IP를 구하시오.", "a": ["10.0.0.62"], "e": "사용 가능한 마지막 IP는 브로드캐스트 주소 바로 전 주소다. 따라서 10.0.0.62이다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "다음 이진수 IPv4 주소를 10진수로 변환하시오: 11000000.10101000.00000001.11111110", "a": ["192.168.1.254"], "e": "각 8비트 옥텟을 128,64,32,16,8,4,2,1 자리값으로 계산하면 192.168.1.254가 된다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "다음 이진수 IPv4 주소를 10진수로 변환하시오: 10101100.00010000.00000101.11001000", "a": ["172.16.5.200"], "e": "각 8비트 옥텟을 128,64,32,16,8,4,2,1 자리값으로 계산하면 172.16.5.200가 된다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "다음 이진수 IPv4 주소를 10진수로 변환하시오: 11000000.10101000.00001010.00000001", "a": ["192.168.10.1"], "e": "각 8비트 옥텟을 128,64,32,16,8,4,2,1 자리값으로 계산하면 192.168.10.1가 된다.", "tip": "", "level": "실기복원형"}, {"cat": "서브넷실기", "q": "다음 이진수 IPv4 주소를 10진수로 변환하시오: 00001010.00000000.00000000.00000001", "a": ["10.0.0.1"], "e": "각 8비트 옥텟을 128,64,32,16,8,4,2,1 자리값으로 계산하면 10.0.0.1가 된다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "현재 설정 내용을 확인하는 Cisco 명령어는?", "a": ["show running-config", "show run", "sh run"], "e": "현재 RAM에서 동작 중인 설정은 show running-config로 확인한다. 축약: show run, sh run.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "저장된 startup 설정을 확인하는 Cisco 명령어는?", "a": ["show startup-config", "show start", "sh start"], "e": "NVRAM의 부팅 설정은 show startup-config로 확인한다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "인터페이스 IP와 up/down 상태를 간단히 확인하는 명령어는?", "a": ["show ip interface brief", "show ip int br", "sh ip int br"], "e": "show ip interface brief는 인터페이스 상태를 요약해 보여준다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "사용자 EXEC 모드에서 특권 EXEC 모드로 진입하는 명령어는?", "a": ["enable"], "e": "Router>에서 enable을 입력하면 Router# 특권 모드가 된다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "특권 EXEC 모드에서 전역 설정 모드로 진입하는 명령어는?", "a": ["configure terminal", "conf t", "config t"], "e": "configure terminal의 대표 축약은 conf t다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "콘솔 라인 설정 모드로 진입하는 명령어는?", "a": ["line console 0", "line con 0"], "e": "line console 0의 실전 축약은 line con 0이다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "VTY 0~4 라인 설정 모드로 진입하는 명령어는?", "a": ["line vty 0 4"], "e": "Telnet/SSH 원격 접속 라인 설정에 line vty 0 4를 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "인터페이스를 활성화하는 명령어는?", "a": ["no shutdown", "no shut"], "e": "shutdown 상태를 해제하려면 no shutdown을 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "현재 설정을 startup-config에 저장하는 대표 명령어는?", "a": ["copy running-config startup-config", "copy run start", "write memory", "wr"], "e": "copy run start 또는 write memory(wr)로 저장할 수 있다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "FastEthernet0/0에 192.168.0.100/24를 설정하고 활성화한 뒤 저장하시오.", "a": ["enable > configure terminal > interface fastethernet 0/0 > ip address 192.168.0.100 255.255.255.0 > no shutdown > end > copy running-config startup-config", "enable > conf t > int fa0/0 > ip address 192.168.0.100 255.255.255.0 > no shut > end > copy run start"], "e": "IP 설정형은 enable → conf t → interface → ip address → no shut → end → 저장 순서다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "Serial2/0 인터페이스의 bandwidth를 2048로 설정하고 저장하시오.", "a": ["enable > configure terminal > interface serial 2/0 > bandwidth 2048 > end > copy running-config startup-config", "enable > conf t > int s2/0 > bandwidth 2048 > end > copy run start"], "e": "대역폭 설정은 인터페이스 설정 모드에서 bandwidth 값을 입력한다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "Serial2/0 인터페이스의 clock rate를 72000으로 설정하고 저장하시오.", "a": ["enable > configure terminal > interface serial 2/0 > clock rate 72000 > end > copy running-config startup-config", "enable > conf t > int s2/0 > clock rate 72000 > end > copy run start"], "e": "Clock rate 문제는 K 단위를 1000으로 환산해 입력하는 유형을 주의한다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "라우터의 기본 게이트웨이를 192.168.0.1로 설정하고 저장하시오.", "a": ["enable > configure terminal > ip default-gateway 192.168.0.1 > end > copy running-config startup-config", "enable > conf t > ip default-gateway 192.168.0.1 > end > copy run start"], "e": "전역 설정 모드에서 ip default-gateway를 설정한다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "라우터 이름을 ICQA로 변경하고 저장하시오.", "a": ["enable > configure terminal > hostname icqa > end > copy running-config startup-config", "enable > conf t > hostname icqa > end > copy run start"], "e": "hostname은 전역 설정 모드에서 설정한다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "enable secret 암호를 network로 설정하고 저장하시오.", "a": ["enable > configure terminal > enable secret network > end > copy running-config startup-config", "enable > conf t > enable secret network > end > copy run start"], "e": "enable secret은 특권 EXEC 진입 암호를 설정한다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "콘솔 접속 암호를 cisco로 설정하고 로그인 검사를 활성화한 뒤 저장하시오.", "a": ["enable > configure terminal > line console 0 > password cisco > login > end > copy running-config startup-config", "enable > conf t > line con 0 > password cisco > login > end > copy run start"], "e": "콘솔 암호는 line console 0에서 password와 login을 함께 설정한다.", "tip": "", "level": "실기복원형"}, {"cat": "Router실기", "q": "목적지 10.10.0.0/16을 다음 홉 192.168.1.254로 보내는 정적 라우트를 설정하고 저장하시오.", "a": ["enable > configure terminal > ip route 10.10.0.0 255.255.0.0 192.168.1.254 > end > copy running-config startup-config", "enable > conf t > ip route 10.10.0.0 255.255.0.0 192.168.1.254 > end > copy run start"], "e": "정적 라우트는 ip route 목적지네트워크 마스크 next-hop 형태다.", "tip": "", "level": "실기복원형"}, {"cat": "Windows실기", "q": "DHCP 범위 옵션에서 기본 게이트웨이를 지정하는 옵션 번호는?", "a": ["003", "003 router", "003 라우터"], "e": "DHCP 옵션 003 Router가 기본 게이트웨이를 배포한다.", "tip": "", "level": "실기복원형"}, {"cat": "Windows실기", "q": "DHCP 범위 옵션에서 DNS 서버를 지정하는 옵션 번호는?", "a": ["006", "006 dns servers", "006 dns 서버"], "e": "DHCP 옵션 006 DNS Servers가 DNS 서버 주소를 배포한다.", "tip": "", "level": "실기복원형"}, {"cat": "Windows실기", "q": "DNS에서 호스트 이름을 IPv4 주소에 연결할 때 사용하는 레코드는?", "a": ["a", "a 레코드"], "e": "A 레코드는 이름 → IPv4 주소 매핑이다.", "tip": "", "level": "실기복원형"}, {"cat": "Windows실기", "q": "DNS에서 IP 주소를 호스트 이름으로 역조회할 때 사용하는 레코드는?", "a": ["ptr", "ptr 레코드"], "e": "PTR 레코드는 IP → 이름 역방향 조회에 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "Windows실기", "q": "DNS에서 메일 서버를 지정하는 레코드는?", "a": ["mx", "mx 레코드"], "e": "MX 레코드는 Mail Exchanger를 지정한다.", "tip": "", "level": "실기복원형"}, {"cat": "Windows실기", "q": "Windows에서 네트워크 설정을 확인하는 명령어는?", "a": ["ipconfig"], "e": "ipconfig는 IP, 마스크, 게이트웨이 등을 확인한다.", "tip": "", "level": "실기복원형"}, {"cat": "Windows실기", "q": "Windows에서 DNS 이름 해석을 점검하는 명령어는?", "a": ["nslookup"], "e": "nslookup은 DNS 질의를 테스트한다.", "tip": "", "level": "실기복원형"}, {"cat": "Windows실기", "q": "Windows에서 목적지까지의 경로를 추적하는 명령어는?", "a": ["tracert"], "e": "Windows의 경로 추적 명령은 tracert다.", "tip": "", "level": "실기복원형"}, {"cat": "케이블실기", "q": "PC와 스위치를 연결하는 일반적인 케이블 유형은?", "a": ["다이렉트", "direct", "straight-through"], "e": "서로 다른 종류의 장비 연결은 전통적으로 다이렉트 케이블을 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "케이블실기", "q": "PC와 PC를 직접 연결하는 전통적인 케이블 유형은?", "a": ["크로스", "crossover", "cross"], "e": "동종 장비 직접 연결은 전통적으로 크로스 케이블을 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "케이블실기", "q": "스위치와 라우터를 연결하는 일반적인 케이블 유형은?", "a": ["다이렉트", "direct", "straight-through"], "e": "서로 다른 종류의 장비이므로 다이렉트 케이블이 일반적이다.", "tip": "", "level": "실기복원형"}, {"cat": "케이블실기", "q": "스위치 일반 포트와 다른 스위치 일반 포트를 직접 연결하는 전통적인 케이블 유형은?", "a": ["크로스", "crossover", "cross"], "e": "동종 장비 일반 포트끼리는 전통적으로 크로스 케이블을 사용한다.", "tip": "", "level": "실기복원형"}, {"cat": "실기단답", "q": "동일한 데이터를 두 개 이상의 디스크에 복제해 한 디스크 장애 시에도 데이터를 사용할 수 있게 하는 RAID 방식은?", "a": ["raid 1", "raid1"], "e": "실기 단답 복원에서 미러링 특성을 설명하고 RAID 번호를 묻는 형태가 확인된다. 정답은 RAID 1이다.", "tip": "", "level": "실기복원형"}];
-const EMU={"router": [{"title": "인터페이스 IP 설정", "desc": "FastEthernet0/0에 192.168.1.1/24를 설정하고 인터페이스를 활성화한 뒤 저장하시오.", "expected": [["enable"], ["configure terminal", "conf t", "config t"], ["interface fastethernet 0/0", "interface fa0/0", "int fastethernet 0/0", "int fa0/0"], ["ip address 192.168.1.1 255.255.255.0"], ["no shutdown", "no shut"], ["end"], ["copy running-config startup-config", "copy run start", "write memory", "wr"]], "explain": "특권 모드 → 전역 설정 → 인터페이스 설정 → IP/마스크 → 활성화 → 종료 → 저장 순서다."}, {"title": "호스트명/특권 암호 설정", "desc": "라우터 이름을 ICQA로 변경하고 enable secret을 network로 설정한 뒤 저장하시오.", "expected": [["enable"], ["configure terminal", "conf t", "config t"], ["hostname icqa"], ["enable secret network"], ["end"], ["copy running-config startup-config", "copy run start", "write memory", "wr"]], "explain": "hostname과 enable secret은 전역 설정 모드에서 지정한다."}, {"title": "정적 라우팅", "desc": "10.10.0.0/16 네트워크를 다음 홉 192.168.1.254로 보내도록 정적 라우트를 설정하고 저장하시오.", "expected": [["enable"], ["configure terminal", "conf t", "config t"], ["ip route 10.10.0.0 255.255.0.0 192.168.1.254"], ["end"], ["copy running-config startup-config", "copy run start", "write memory", "wr"]], "explain": "정적 라우트 형식은 ip route [목적지 네트워크] [마스크] [다음 홉]이다."}, {"title": "DHCP 설정", "desc": "192.168.100.0/24를 DHCP로 배포한다. 192.168.100.1~10은 제외하고, 게이트웨이는 192.168.100.1, DNS는 8.8.8.8로 설정하시오.", "expected": [["enable"], ["configure terminal", "conf t", "config t"], ["ip dhcp excluded-address 192.168.100.1 192.168.100.10"], ["ip dhcp pool icqa", "ip dhcp pool test", "ip dhcp pool pool1"], ["network 192.168.100.0 255.255.255.0"], ["default-router 192.168.100.1"], ["dns-server 8.8.8.8"], ["end"], ["copy running-config startup-config", "copy run start", "write memory", "wr"]], "explain": "제외 주소는 전역 설정에서, network/default-router/dns-server는 DHCP pool 안에서 설정한다."}], "windows": [{"title": "DHCP 범위 생성", "desc": "DHCP에서 192.168.10.100~192.168.10.200 범위를 만들고, 100~110은 제외, 게이트웨이는 192.168.10.1로 설정한 뒤 범위를 활성화하시오.", "steps": [["서버 관리자", "도구", "DHCP", "IPv4", "새 범위"], ["이름 입력", "IP 범위 192.168.10.100~192.168.10.200", "제외 주소 192.168.10.100~110", "003 라우터 192.168.10.1", "범위 활성화"]], "answer": ["DHCP", "IPv4", "새 범위", "제외 주소", "003 라우터", "범위 활성화"], "explain": "시험에서는 메뉴 이동보다 설정 순서가 중요하다. 새 범위 → 주소 범위 → 제외 주소 → 003 Router → 활성화."}, {"title": "DNS A 레코드", "desc": "host.example.com을 192.168.1.20으로 연결하도록 DNS를 설정하시오.", "answer": ["DNS", "정방향 조회 영역", "example.com", "새 호스트(A 또는 AAAA)", "host", "192.168.1.20"], "explain": "이름 → IPv4 주소 매핑은 정방향 조회 영역의 A 레코드다."}, {"title": "방화벽 포트 허용", "desc": "Windows 방화벽에서 외부의 TCP 8080 포트 접속을 허용하시오.", "answer": ["고급 보안 방화벽", "인바운드 규칙", "새 규칙", "포트", "TCP", "8080", "연결 허용"], "explain": "외부에서 들어오는 연결이므로 인바운드 규칙을 만들고 Port → TCP → 8080 → Allow 순서로 진행한다."}], "utp": [{"title": "T568B 결선", "desc": "T568B 규격으로 1번부터 8번까지 순서대로 결선하시오.", "colors": ["흰주황", "주황", "흰초록", "파랑", "흰파랑", "초록", "흰갈색", "갈색"], "explain": "T568B: 흰주황 → 주황 → 흰초록 → 파랑 → 흰파랑 → 초록 → 흰갈색 → 갈색"}, {"title": "T568A 결선", "desc": "T568A 규격으로 1번부터 8번까지 순서대로 결선하시오.", "colors": ["흰초록", "초록", "흰주황", "파랑", "흰파랑", "주황", "흰갈색", "갈색"], "explain": "T568A: 흰초록 → 초록 → 흰주황 → 파랑 → 흰파랑 → 주황 → 흰갈색 → 갈색"}]};
+const EMU={"router": [{"title": "인터페이스 IP 설정", "desc": "FastEthernet0/0에 192.168.1.1/24를 설정하고 인터페이스를 활성화한 뒤 저장하시오.", "expected": [["enable"], ["configure terminal", "conf t", "config t"], ["interface fastethernet 0/0", "interface fa0/0", "int fastethernet 0/0", "int fa0/0"], ["ip address 192.168.1.1 255.255.255.0"], ["no shutdown", "no shut"], ["end"], ["copy running-config startup-config", "copy run start", "write memory", "wr"]], "explain": "특권 모드 → 전역 설정 → 인터페이스 설정 → IP/마스크 → 활성화 → 종료 → 저장 순서다.", "target": {"interfaces": {"fa0/0": {"ip": "192.168.1.1", "mask": "255.255.255.0", "shutdown": false}}, "saved": true}}, {"title": "호스트명/특권 암호 설정", "desc": "라우터 이름을 ICQA로 변경하고 enable secret을 network로 설정한 뒤 저장하시오.", "expected": [["enable"], ["configure terminal", "conf t", "config t"], ["hostname icqa"], ["enable secret network"], ["end"], ["copy running-config startup-config", "copy run start", "write memory", "wr"]], "explain": "hostname과 enable secret은 전역 설정 모드에서 지정한다.", "target": {"hostname": "icqa", "enableSecret": "network", "saved": true}}, {"title": "정적 라우팅", "desc": "10.10.0.0/16 네트워크를 다음 홉 192.168.1.254로 보내도록 정적 라우트를 설정하고 저장하시오.", "expected": [["enable"], ["configure terminal", "conf t", "config t"], ["ip route 10.10.0.0 255.255.0.0 192.168.1.254"], ["end"], ["copy running-config startup-config", "copy run start", "write memory", "wr"]], "explain": "정적 라우트 형식은 ip route [목적지 네트워크] [마스크] [다음 홉]이다.", "target": {"staticRoutes": [["10.10.0.0", "255.255.0.0", "192.168.1.254"]], "saved": true}}, {"title": "DHCP 설정", "desc": "192.168.100.0/24를 DHCP로 배포한다. 192.168.100.1~10은 제외하고, 게이트웨이는 192.168.100.1, DNS는 8.8.8.8로 설정하시오.", "expected": [["enable"], ["configure terminal", "conf t", "config t"], ["ip dhcp excluded-address 192.168.100.1 192.168.100.10"], ["ip dhcp pool icqa", "ip dhcp pool test", "ip dhcp pool pool1"], ["network 192.168.100.0 255.255.255.0"], ["default-router 192.168.100.1"], ["dns-server 8.8.8.8"], ["end"], ["copy running-config startup-config", "copy run start", "write memory", "wr"]], "explain": "제외 주소는 전역 설정에서, network/default-router/dns-server는 DHCP pool 안에서 설정한다.", "target": {"dhcpExcluded": [["192.168.100.1", "192.168.100.10"]], "dhcpPool": {"network": ["192.168.100.0", "255.255.255.0"], "defaultRouter": "192.168.100.1", "dnsServer": "8.8.8.8"}, "saved": true}}], "windows": [{"title": "DHCP 범위 생성", "desc": "DHCP에서 192.168.10.100~192.168.10.200 범위를 만들고, 100~110은 제외, 게이트웨이는 192.168.10.1로 설정한 뒤 범위를 활성화하시오.", "steps": [["서버 관리자", "도구", "DHCP", "IPv4", "새 범위"], ["이름 입력", "IP 범위 192.168.10.100~192.168.10.200", "제외 주소 192.168.10.100~110", "003 라우터 192.168.10.1", "범위 활성화"]], "answer": ["DHCP", "IPv4", "새 범위", "제외 주소", "003 라우터", "범위 활성화"], "explain": "시험에서는 메뉴 이동보다 설정 순서가 중요하다. 새 범위 → 주소 범위 → 제외 주소 → 003 Router → 활성화."}, {"title": "DNS A 레코드", "desc": "host.example.com을 192.168.1.20으로 연결하도록 DNS를 설정하시오.", "answer": ["DNS", "정방향 조회 영역", "example.com", "새 호스트(A 또는 AAAA)", "host", "192.168.1.20"], "explain": "이름 → IPv4 주소 매핑은 정방향 조회 영역의 A 레코드다."}, {"title": "방화벽 포트 허용", "desc": "Windows 방화벽에서 외부의 TCP 8080 포트 접속을 허용하시오.", "answer": ["고급 보안 방화벽", "인바운드 규칙", "새 규칙", "포트", "TCP", "8080", "연결 허용"], "explain": "외부에서 들어오는 연결이므로 인바운드 규칙을 만들고 Port → TCP → 8080 → Allow 순서로 진행한다."}], "utp": [{"title": "T568B 결선", "desc": "T568B 규격으로 1번부터 8번까지 순서대로 결선하시오.", "colors": ["흰주황", "주황", "흰초록", "파랑", "흰파랑", "초록", "흰갈색", "갈색"], "explain": "T568B: 흰주황 → 주황 → 흰초록 → 파랑 → 흰파랑 → 초록 → 흰갈색 → 갈색"}, {"title": "T568A 결선", "desc": "T568A 규격으로 1번부터 8번까지 순서대로 결선하시오.", "colors": ["흰초록", "초록", "흰주황", "파랑", "흰파랑", "주황", "흰갈색", "갈색"], "explain": "T568A: 흰초록 → 초록 → 흰주황 → 파랑 → 흰파랑 → 주황 → 흰갈색 → 갈색"}]};
 let session=[],idx=0,correct=0,wrong=0,answered=false,mistakes=[];
 const STORE="net2-study-emulator-v1";
 let saved=JSON.parse(localStorage.getItem(STORE)||'{"wrongIds":[],"history":{},"total":0}');
@@ -423,17 +423,297 @@ function renderEmu(){
  let q=curEmu();emuTitle.textContent=q.title;emuDesc.textContent=q.desc;emuResult.className='emu-result';emuResult.innerHTML='';routerLines=[];winSteps=[];
  if(emuType==='router')renderRouter(q);else renderWindows(q)
 }
-function renderRouter(q){
- emuBody.innerHTML=`<div class="terminal" id="terminal"><div class="term-line">Cisco IOS Software, Training Simulator</div><div class="term-line">Press RETURN to get started!</div><div id="termLines"></div><div class="term-input-row"><span class="prompt" id="prompt">Router&gt;</span><input id="termInput" class="term-input" autocomplete="off" spellcheck="false"></div></div>`;
- termInput.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();runTerm(termInput.value);termInput.value=''}});termInput.focus();
+
+let ios = null;
+
+function freshIOS(){
+ return {
+   mode:'user',
+   hostname:'Router',
+   subcontext:null,
+   enableSecret:null,
+   interfaces:{},
+   lineConsole:{password:null,login:false},
+   staticRoutes:[],
+   defaultGateway:null,
+   dhcpExcluded:[],
+   dhcpPools:{},
+   currentDhcpPool:null,
+   saved:false,
+   runningDirty:false
+ };
 }
-function currentPrompt(){let p='Router>';let all=routerLines.map(x=>norm(x));if(all.some(x=>x==='enable'))p='Router#';if(all.some(x=>['configure terminal','conf t','config t'].includes(x)))p='Router(config)#';let last=all[all.length-1]||'';if(last.startsWith('interface ')||last.startsWith('int '))p='Router(config-if)#';if(last.startsWith('ip dhcp pool'))p='Router(dhcp-config)#';if(last==='end')p='Router#';return p}
-function runTerm(cmd){
- cmd=cmd.trim();if(!cmd)return;routerLines.push(cmd);let d=document.createElement('div');d.className='term-line';d.textContent=currentPrompt().replace(/[^>#]+(?=[>#]$)/,'Router')+' '+cmd;termLines.appendChild(d);
- if(['show ip interface brief','show ip int br','sh ip int br'].includes(norm(cmd))){let r=document.createElement('div');r.className='term-line';r.textContent='Interface              IP-Address      OK? Method Status\nFastEthernet0/0        192.168.1.1     YES manual up';termLines.appendChild(r)}
- if(['show running-config','show run','sh run'].includes(norm(cmd))){let r=document.createElement('div');r.className='term-line';r.textContent='Building configuration...\nCurrent configuration : training simulator';termLines.appendChild(r)}
- if(['show startup-config','show start','sh start'].includes(norm(cmd))){let r=document.createElement('div');r.className='term-line';r.textContent='Using startup configuration from NVRAM';termLines.appendChild(r)}
- prompt.innerHTML=currentPrompt().replace('>','&gt;');terminal.scrollTop=terminal.scrollHeight;
+
+function iosPrompt(){
+ const h=ios.hostname || 'Router';
+ if(ios.mode==='user') return h+'>';
+ if(ios.mode==='privileged') return h+'#';
+ if(ios.mode==='global') return h+'(config)#';
+ if(ios.mode==='interface') return h+'(config-if)#';
+ if(ios.mode==='line') return h+'(config-line)#';
+ if(ios.mode==='dhcp') return h+'(dhcp-config)#';
+ return h+'>';
+}
+
+function canonIfName(raw){
+ let s=(raw||'').toLowerCase().replace(/\s+/g,'').replace(/^interface/,'').replace(/^int/,'');
+ s=s.replace(/^fastethernet/,'fa').replace(/^gigabitethernet/,'g').replace(/^serial/,'s');
+ return s;
+}
+
+function isOneOf(c, arr){ return arr.includes(c); }
+
+function appendTerm(s, cls='term-line'){
+ const d=document.createElement('div'); d.className=cls; d.textContent=s; termLines.appendChild(d);
+}
+
+function iosError(msg){
+ appendTerm('% '+msg);
+}
+
+function markDirty(){ ios.runningDirty=true; ios.saved=false; }
+
+function renderRouter(q){
+ ios=freshIOS(); routerLines=[];
+ emuBody.innerHTML=`<div class="terminal" id="terminal">
+ <div class="term-line">Cisco IOS Software, Training Simulator</div>
+ <div class="term-line">시험 연습용 상태 기반 CLI · 축약 명령 지원</div>
+ <div id="termLines"></div>
+ <div class="term-input-row"><span class="prompt" id="prompt">Router&gt;</span><input id="termInput" class="term-input" autocomplete="off" spellcheck="false"></div>
+ </div>`;
+ termInput.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();runTerm(termInput.value);termInput.value=''}});
+ termInput.focus();
+}
+
+function runTerm(raw){
+ const cmd=(raw||'').trim();
+ if(!cmd) return;
+ const before=iosPrompt();
+ routerLines.push(cmd);
+ appendTerm(before+' '+cmd);
+
+ const c=norm(cmd);
+ let matched=true;
+
+ // 모든 설정 모드에서 가능한 이동 명령
+ if(c==='end'){
+   if(['global','interface','line','dhcp'].includes(ios.mode)){
+     ios.mode='privileged'; ios.subcontext=null; ios.currentDhcpPool=null;
+   } else {
+     iosError('Invalid input detected');
+   }
+ }
+ else if(c==='exit'){
+   if(ios.mode==='interface' || ios.mode==='line' || ios.mode==='dhcp'){
+     ios.mode='global'; ios.subcontext=null; ios.currentDhcpPool=null;
+   } else if(ios.mode==='global'){
+     ios.mode='privileged';
+   } else if(ios.mode==='privileged'){
+     ios.mode='user';
+   } else {
+     iosError('Connection remains active in training simulator');
+   }
+ }
+
+ // user EXEC
+ else if(ios.mode==='user'){
+   if(isOneOf(c,['enable','en'])) ios.mode='privileged';
+   else iosError('Privileged command required. Try "enable" or "en".');
+ }
+
+ // privileged EXEC
+ else if(ios.mode==='privileged'){
+   if(isOneOf(c,['configure terminal','conf t','config t','conf term'])){
+     ios.mode='global';
+   }
+   else if(isOneOf(c,['copy running-config startup-config','copy run start','copy r s','copy ru st','wr','write memory','write mem'])){
+     ios.saved=true; ios.runningDirty=false;
+     appendTerm('Building configuration...');
+     appendTerm('[OK]');
+   }
+   else if(isOneOf(c,['show running-config','show run','sh run'])){
+     appendTerm('Building configuration...');
+     appendTerm('Current configuration : training simulator');
+     appendRunningSummary();
+   }
+   else if(isOneOf(c,['show startup-config','show start','sh start'])){
+     appendTerm(ios.saved ? 'Using startup configuration from NVRAM' : 'startup-config is not present or not saved yet');
+   }
+   else if(isOneOf(c,['show ip interface brief','show ip int br','sh ip int br','sh ip inte br'])){
+     appendTerm('Interface              IP-Address      OK? Method Status                Protocol');
+     const keys=Object.keys(ios.interfaces);
+     if(!keys.length) appendTerm('FastEthernet0/0        unassigned      YES unset  administratively down down');
+     keys.forEach(k=>{
+       const x=ios.interfaces[k];
+       const name=k.startsWith('fa')?'FastEthernet'+k.slice(2):k.startsWith('g')?'GigabitEthernet'+k.slice(1):k.startsWith('s')?'Serial'+k.slice(1):k;
+       const status=x.shutdown===false?'up':'administratively down';
+       const proto=x.shutdown===false?'up':'down';
+       appendTerm(name.padEnd(23)+(x.ip||'unassigned').padEnd(16)+'YES manual '+status.padEnd(22)+proto);
+     });
+   }
+   else iosError('Invalid input detected at privileged EXEC mode.');
+ }
+
+ // global configuration
+ else if(ios.mode==='global'){
+   if(/^hostname\s+\S+/i.test(cmd)){
+     ios.hostname=cmd.trim().split(/\s+/)[1]; markDirty();
+   }
+   else if(/^enable\s+secret\s+\S+/i.test(cmd)){
+     ios.enableSecret=cmd.trim().split(/\s+/).slice(2).join(' '); markDirty();
+   }
+   else if(/^(interface|int)\s+/i.test(cmd)){
+     const rawIf=cmd.replace(/^(interface|int)\s+/i,'');
+     const ifn=canonIfName(rawIf);
+     if(!ifn){ iosError('Interface name required.'); }
+     else{
+       ios.interfaces[ifn]=ios.interfaces[ifn]||{ip:null,mask:null,shutdown:true,bandwidth:null,clockRate:null};
+       ios.subcontext=ifn; ios.mode='interface';
+     }
+   }
+   else if(/^line\s+(console|con)\s+0$/i.test(cmd)){
+     ios.mode='line'; ios.subcontext='console0';
+   }
+   else if(/^ip\s+route\s+\S+\s+\S+\s+\S+$/i.test(cmd)){
+     const p=cmd.trim().split(/\s+/);
+     ios.staticRoutes.push([p[2],p[3],p[4]]); markDirty();
+   }
+   else if(/^ip\s+default-gateway\s+\S+$/i.test(cmd)){
+     ios.defaultGateway=cmd.trim().split(/\s+/)[2]; markDirty();
+   }
+   else if(/^ip\s+dhcp\s+excluded-address\s+\S+\s+\S+$/i.test(cmd)){
+     const p=cmd.trim().split(/\s+/);
+     ios.dhcpExcluded.push([p[3],p[4]]); markDirty();
+   }
+   else if(/^ip\s+dhcp\s+pool\s+\S+$/i.test(cmd)){
+     const name=cmd.trim().split(/\s+/)[3];
+     ios.dhcpPools[name]=ios.dhcpPools[name]||{network:null,defaultRouter:null,dnsServer:null};
+     ios.currentDhcpPool=name; ios.mode='dhcp'; markDirty();
+   }
+   else iosError('Invalid input detected at global configuration mode.');
+ }
+
+ // interface configuration
+ else if(ios.mode==='interface'){
+   const x=ios.interfaces[ios.subcontext];
+   if(/^ip\s+address\s+\S+\s+\S+$/i.test(cmd)){
+     const p=cmd.trim().split(/\s+/); x.ip=p[2]; x.mask=p[3]; markDirty();
+   }
+   else if(isOneOf(c,['no shutdown','no shut'])){
+     x.shutdown=false; markDirty();
+   }
+   else if(c==='shutdown'){
+     x.shutdown=true; markDirty();
+   }
+   else if(/^bandwidth\s+\d+$/i.test(cmd)){
+     x.bandwidth=Number(cmd.trim().split(/\s+/)[1]); markDirty();
+   }
+   else if(/^clock\s+rate\s+\d+$/i.test(cmd)){
+     x.clockRate=Number(cmd.trim().split(/\s+/)[2]); markDirty();
+   }
+   else iosError('Invalid input detected at interface configuration mode.');
+ }
+
+ // line configuration
+ else if(ios.mode==='line'){
+   if(/^password\s+\S+/i.test(cmd)){
+     ios.lineConsole.password=cmd.trim().split(/\s+/).slice(1).join(' '); markDirty();
+   }
+   else if(c==='login'){
+     ios.lineConsole.login=true; markDirty();
+   }
+   else iosError('Invalid input detected at line configuration mode.');
+ }
+
+ // DHCP pool configuration
+ else if(ios.mode==='dhcp'){
+   const pool=ios.dhcpPools[ios.currentDhcpPool];
+   if(/^network\s+\S+\s+\S+$/i.test(cmd)){
+     const p=cmd.trim().split(/\s+/); pool.network=[p[1],p[2]]; markDirty();
+   }
+   else if(/^default-router\s+\S+$/i.test(cmd)){
+     pool.defaultRouter=cmd.trim().split(/\s+/)[1]; markDirty();
+   }
+   else if(/^dns-server\s+\S+$/i.test(cmd)){
+     pool.dnsServer=cmd.trim().split(/\s+/)[1]; markDirty();
+   }
+   else iosError('Invalid input detected at DHCP pool configuration mode.');
+ }
+
+ prompt.textContent=iosPrompt();
+ terminal.scrollTop=terminal.scrollHeight;
+}
+
+function appendRunningSummary(){
+ if(ios.hostname!=='Router') appendTerm('hostname '+ios.hostname);
+ if(ios.enableSecret) appendTerm('enable secret '+ios.enableSecret);
+ Object.entries(ios.interfaces).forEach(([k,v])=>{
+   appendTerm('interface '+k);
+   if(v.ip) appendTerm(' ip address '+v.ip+' '+v.mask);
+   if(v.bandwidth!==null) appendTerm(' bandwidth '+v.bandwidth);
+   if(v.clockRate!==null) appendTerm(' clock rate '+v.clockRate);
+   appendTerm(v.shutdown===false?' no shutdown':' shutdown');
+ });
+ ios.staticRoutes.forEach(r=>appendTerm('ip route '+r.join(' ')));
+ ios.dhcpExcluded.forEach(r=>appendTerm('ip dhcp excluded-address '+r.join(' ')));
+ Object.entries(ios.dhcpPools).forEach(([n,p])=>{
+   appendTerm('ip dhcp pool '+n);
+   if(p.network) appendTerm(' network '+p.network.join(' '));
+   if(p.defaultRouter) appendTerm(' default-router '+p.defaultRouter);
+   if(p.dnsServer) appendTerm(' dns-server '+p.dnsServer);
+ });
+}
+
+function sameArray(a,b){ return JSON.stringify(a)===JSON.stringify(b); }
+
+function gradeRouterTarget(q){
+ const t=q.target||{};
+ const misses=[];
+
+ if(t.hostname && norm(ios.hostname)!==norm(t.hostname)) misses.push('hostname '+t.hostname);
+ if(t.enableSecret && ios.enableSecret!==t.enableSecret) misses.push('enable secret '+t.enableSecret);
+
+ if(t.interfaces){
+   Object.entries(t.interfaces).forEach(([ifn,want])=>{
+     const got=ios.interfaces[canonIfName(ifn)];
+     if(!got) misses.push(ifn+' 인터페이스 설정');
+     else{
+       if(want.ip && got.ip!==want.ip) misses.push(ifn+' IP '+want.ip);
+       if(want.mask && got.mask!==want.mask) misses.push(ifn+' mask '+want.mask);
+       if(want.shutdown===false && got.shutdown!==false) misses.push(ifn+' no shutdown');
+       if(want.bandwidth!==undefined && got.bandwidth!==want.bandwidth) misses.push(ifn+' bandwidth '+want.bandwidth);
+       if(want.clockRate!==undefined && got.clockRate!==want.clockRate) misses.push(ifn+' clock rate '+want.clockRate);
+     }
+   });
+ }
+
+ if(t.staticRoutes){
+   t.staticRoutes.forEach(w=>{
+     if(!ios.staticRoutes.some(g=>sameArray(g,w))) misses.push('정적 라우트 '+w.join(' '));
+   });
+ }
+
+ if(t.defaultGateway && ios.defaultGateway!==t.defaultGateway) misses.push('default-gateway '+t.defaultGateway);
+
+ if(t.dhcpExcluded){
+   t.dhcpExcluded.forEach(w=>{
+     if(!ios.dhcpExcluded.some(g=>sameArray(g,w))) misses.push('DHCP 제외 '+w.join('~'));
+   });
+ }
+
+ if(t.dhcpPool){
+   const pools=Object.values(ios.dhcpPools);
+   const good=pools.some(p=>{
+     const netOk=!t.dhcpPool.network || sameArray(p.network,t.dhcpPool.network);
+     const gwOk=!t.dhcpPool.defaultRouter || p.defaultRouter===t.dhcpPool.defaultRouter;
+     const dnsOk=!t.dhcpPool.dnsServer || p.dnsServer===t.dhcpPool.dnsServer;
+     return netOk&&gwOk&&dnsOk;
+   });
+   if(!good) misses.push('DHCP pool의 network/default-router/dns-server');
+ }
+
+ if(t.saved && !ios.saved) misses.push('설정 저장(copy r s / copy run start / wr)');
+ return misses;
 }
 function renderWindows(q){
  emuBody.innerHTML=`<div class="win-shell"><div class="win-nav"><button onclick="winClick('서버 관리자')">서버 관리자</button><button onclick="winClick('도구')">도구</button><button onclick="winClick('DHCP')">DHCP</button><button onclick="winClick('DNS')">DNS</button><button onclick="winClick('고급 보안 방화벽')">고급 보안 방화벽</button></div><div class="win-main"><h3 id="winTitle">서버 관리자</h3><div class="win-toolbar" id="winToolbar"></div><div class="step-list"><b>선택한 작업</b><div id="stepArea"></div></div></div></div>`;
@@ -480,21 +760,34 @@ function resetEmu(){renderEmu()}
 function gradeEmu(){
  let q=curEmu(),ok=false,detail='';
  if(emuType==='router'){
-   let lines=routerLines.map(norm),pos=-1;ok=true;
-   for(let group of q.expected){let found=-1;for(let i=pos+1;i<lines.length;i++){if(group.map(norm).includes(lines[i])){found=i;break}}if(found<0){ok=false;detail='필수 명령 일부가 빠졌거나 순서가 달라.';break}pos=found}
+   const misses=gradeRouterTarget(q);
+   ok=misses.length===0;
+   if(!ok) detail='아직 필요한 설정: '+misses.join(' · ');
  } else {
    let target=q.answer.map(norm),got=winSteps.map(norm),pos=-1;ok=true;
    for(let t of target){let f=got.findIndex((x,i)=>i>pos&&x===t);if(f<0){ok=false;detail=`필수 단계 '${t}'가 빠졌어.`;break}pos=f}
  }
- emuResult.className='emu-result '+(ok?'good':'bad');emuResult.innerHTML=(ok?'✅ <b>실기 정답!</b>':'❌ <b>아직 틀린 부분이 있어.</b><br>'+detail)+`<br><br>${q.explain}`;
+ emuResult.className='emu-result '+(ok?'good':'bad');
+ emuResult.innerHTML=(ok
+   ? '✅ <b>실기 정답!</b><br>명령어 문장 자체가 아니라 <b>최종 설정 상태</b>가 맞아서 정답 처리했어.'
+   : '❌ <b>아직 틀린 부분이 있어.</b><br>'+detail)
+   +`<br><br>${q.explain}`;
 }
 function showEmuAnswer(){
  let q=curEmu(),ans='';
  if(emuType==='router'){
    ans=q.expected.map(g=>g[0]).join(' → ');
-   const short=q.expected.map(g=>compactDisplay(g[0])).join(' → ');
+   let short=q.expected.map(g=>compactDisplay(g[0])).join(' → ')
+     .replace(/^enable\b/i,'en')
+     .replace(/copy run start/gi,'copy r s');
+   // end를 사용하는 정답과 exit를 단계별로 쓰는 정답을 둘 다 보여준다.
+   let exitFlow=short.replace(/\bend\b/i,'exit → exit');
    emuResult.className='emu-result bad';
-   emuResult.innerHTML=`💡 <b>정답 흐름</b><br>${ans}<br><br>⌨️ <b>축약형</b><br>${short}<br><br>${q.explain}`;
+   emuResult.innerHTML=`💡 <b>정식 흐름 예시</b><br>${ans}
+   <br><br>⌨️ <b>축약형 예시</b><br>${short}
+   <br><br>↩️ <b>exit로 빠져나오는 예시</b><br>${exitFlow}
+   <br><br><b>인정되는 대표 축약</b>: enable=en · configure terminal=conf t · no shutdown=no shut · copy running-config startup-config=copy r s / copy run start / wr
+   <br><br>${q.explain}`;
    return;
  } else ans=q.answer.join(' → ');
  emuResult.className='emu-result bad';emuResult.innerHTML=`💡 <b>정답 흐름</b><br>${ans}<br><br>${q.explain}`;
