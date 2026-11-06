@@ -9,16 +9,16 @@
 *{box-sizing:border-box}
 html{overscroll-behavior-y:contain}
 body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,"Segoe UI","Noto Sans KR",sans-serif;color:var(--text);overscroll-behavior-y:contain;-webkit-text-size-adjust:100%}
-.wrap{max-width:1040px;margin:0 auto;padding:22px 16px 90px}
+.wrap{max-width:1040px;margin:0 auto;padding:12px 16px 90px}
 button{min-height:44px}
-h1{margin:0 0 8px;font-size:30px}.desc{color:var(--muted);line-height:1.65;margin-bottom:18px}
-.top-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 20px}
+h1{margin:0 0 10px;font-size:19px;font-weight:700;color:var(--muted)}.desc{color:var(--muted);line-height:1.5;margin-bottom:12px;font-size:13px}
+.top-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
 .top-tabs button{border:1px solid var(--line);background:#fff;padding:11px 16px;border-radius:12px;font-weight:700;cursor:pointer}
 .top-tabs button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 .section{display:none}.section.active{display:block}
 .toolbar,.actions,.emu-tabs{display:flex;flex-wrap:wrap;gap:10px}
 select,button,input{font:inherit}select,button{background:#fff;border:1px solid var(--line);border-radius:11px;padding:10px 13px}button{cursor:pointer}button.primary{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:700}
-.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:16px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center;color:var(--muted);font-size:13px}.stat strong{display:block;color:var(--text);font-size:21px;margin-top:3px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:10px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:9px;text-align:center;color:var(--muted);font-size:12px}.stat strong{display:block;color:var(--text);font-size:18px;margin-top:2px}
 .card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 35px rgba(20,30,50,.05)}
 .meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.badge{background:#eef2ff;color:#4338ca;padding:6px 10px;border-radius:999px;font-weight:800;font-size:13px}
 .q{font-size:21px;line-height:1.6;margin:14px 0 22px;font-weight:750}.answerrow{display:flex;gap:10px}.answerrow input{flex:1;border:2px solid #cdd4dd;border-radius:12px;padding:13px 15px;outline:none;transition:border-color .15s,box-shadow .15s}
@@ -54,7 +54,7 @@ select,button,input{font:inherit}select,button{background:#fff;border:1px solid 
 @media(max-width:760px){.sum-grid{grid-template-columns:1fr}}
 
 @media(max-width:760px){
-.stats{grid-template-columns:repeat(2,1fr)}.answerrow{flex-direction:column}.win-shell{grid-template-columns:1fr}.win-nav{display:flex;overflow:auto;gap:6px}.win-nav button{width:auto;white-space:nowrap}.cable-board{grid-template-columns:repeat(4,1fr)}h1{font-size:25px}
+.stats{grid-template-columns:repeat(2,1fr)}.answerrow{flex-direction:column}.win-shell{grid-template-columns:1fr}.win-nav{display:flex;overflow:auto;gap:6px}.win-nav button{width:auto;white-space:nowrap}.cable-board{grid-template-columns:repeat(4,1fr)}
 .card{padding:18px 16px 16px}
 #quizSection .actions{position:sticky;bottom:0;left:0;background:var(--card);margin:16px -16px -16px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));border-top:1px solid var(--line);border-radius:0 0 20px 20px;box-shadow:0 -6px 16px rgba(20,30,50,.06);z-index:5}
 #quizSection .actions button{flex:1 1 auto}
@@ -65,7 +65,6 @@ select,button,input{font:inherit}select,button{background:#fff;border:1px solid 
 <body>
 <div class="wrap">
 <h1>네트워크관리사 2급 실기 학습</h1>
-<div class="desc">ICQA 네트워크관리사 2급 실기 5과목(LAN전송매체·네트워크설계구축·TCP/IP·NOS·네트워크운용기기) 기준으로 재구성한 <b>220문제</b>와 작업형 에뮬레이터를 분리했습니다.</div>
 
 <div class="top-tabs">
 <button id="tabQuiz" class="active" onclick="showSection('quiz')">📘 문제은행</button>
